@@ -23,6 +23,11 @@
   <include name="system.xml"/>
   <include name="vendor.xml"/>
 
+  <!-- Lighthouse -->
+  <remote  name="lighthouse"
+           fetch="https://github.com/lighthouseQC"
+           revision="sailboat"/>
+
   <!-- AOSPA -->
   <remote  name="aospa"
            fetch=".."
@@ -50,7 +55,7 @@
   <remote  name="gitlab"
            fetch="https://gitlab.com" />
 
-  <include name="aospa.xml"/>
+  <include name="lighthouse.xml"/>
   <include name="obsolete.xml"/>
 
 </manifest>
