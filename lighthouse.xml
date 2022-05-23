@@ -62,6 +62,10 @@
   <project path="external/jemalloc_new" name="external_jemalloc-new" remote="lighthouse" />
   <remove-project name="platform/external/scudo" />
   <project path="external/scudo" name="external_scudo" remote="lighthouse" />
+  <remove-project name="platform/external/libvpx" />
+  <project path="external/libvpx" name="external_libvpx" remote="lighthouse" />
+  <remove-project name="platform/external/OpenCSD" />
+  <project path="external/OpenCSD" name="external_OpenCSD" remote="lighthouse" />
 
   <!-- External (ProtonAOSP) -->
   <project path="external/colorkt" name="external_colorkt" remote="lighthouse" />
