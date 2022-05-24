@@ -93,6 +93,7 @@
 
   <!-- TODO: work on these packages -->
   <!-- Packages (AOSPA) -->
+  <project path="packages/apps/Supplies" name="packages_apps_Supplies" remote="lighthouse" />
   <project path="packages/apps/ParanoidDoze" name="AOSPA/android_packages_apps_ParanoidDoze" remote="aospa" />
   <project path="packages/apps/ParanoidHub" name="AOSPA/android_packages_apps_ParanoidHub" remote="aospa" />
   <project path="packages/apps/ParanoidPapers" name="AOSPA/android_packages_apps_ParanoidPapers" remote="aospa" />
