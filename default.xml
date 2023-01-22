@@ -24,6 +24,9 @@
            fetch="https://gitlab.com" />
 
   <include name="aosp.xml"/>
+  <include name="remove.xml"/>
+  <include name="lighthouse.xml"/>
+  <include name="others/aospa.xml"/>
   <include name="obsolete.xml"/>
 
 </manifest>

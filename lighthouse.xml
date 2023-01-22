@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="lighthouse"
+           fetch="https://github.com/lighthouseQC"
+           revision="torpedo" />
+
+  <!-- build and core -->
+  <project path="build/make" name="build" remote="lighthouse" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="art" name="art" remote="lighthouse" />
+  <project path="bionic" name="bionic" remote="lighthouse" />
+  <project path="build/soong" name="build_soong" remote="lighthouse" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- bootable -->
+  <project path="bootable/recovery" name="bootable_recovery" remote="lighthouse" />
+
+  <!-- device -->
+  <project path="device/qcom/common" name="device_qcom_common" remote="lighthouse" >
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project> 
+  <project path="device/qcom/qssi" name="device_qcom_qssi" remote="lighthouse" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="lighthouse" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="lighthouse" />
+  <project path="device/qcom/vendor-common" name="device_qcom_vendor-common" remote="lighthouse" />
+  <project path="device/qcom/kernelscripts" name="kernel_build" remote="lighthouse" >
+    <linkfile dest="vendor/qcom/build/tasks/kernel_definitions.mk" src="kernel_definitions.mk"/>
+  </project>
+
+  <!-- frameworks-->
+  <project path="frameworks/base" name="frameworks_base" remote="lighthouse" />
+  <project path="frameworks/av" name="frameworks_av" remote="lighthouse" />
+  <project path="frameworks/native" name="frameworks_native" remote="lighthouse" />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="lighthouse" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="lighthouse" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="lighthouse" />
+  <project path="frameworks/proto_logging" name="frameworks_proto_logging" remote="lighthouse" />
+
+  <!-- hardware -->
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="lighthouse" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="lighthouse" />
+
+  <!-- manifest -->
+  <project path="manifest" name="manifest" remote="lighthouse" />
+
+  <!-- packages -->
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="lighthouse" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="lighthouse" />
+  <project path="packages/apps/Supplies" name="packages_apps_Supplies" remote="lighthouse" />
+
+  <!-- system -->
+  <project path="system/core" name="system_core" remote="lighthouse" />
+
+  <!-- vendor -->
+  <project path="vendor/lighthouse" name="vendor_lighthouse" remote="lighthouse" >
+    <linkfile src="build.sh" dest="rom-build.sh" />
+  </project>
+  <project path="vendor/lighthouse/apps/LighthouseThemePicker" name="vendor_lighthouse_apps_LighthouseThemePicker" remote="lighthouse" />
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="lighthouse" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_commonsys-intf_display" remote="lighthouse" >
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
+  </project>
+  <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom-opensource_display-commonsys" remote="lighthouse" />
+ </manifest>
