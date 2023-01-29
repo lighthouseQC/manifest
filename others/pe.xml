@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="pe"
+          fetch="https://github.com/PixelExperience"
+          revision="thirteen" />
+
+  <remote name="pe-gitlab-self-hosted"
+          fetch="https://gitlab.pixelexperience.org/android"
+          revision="thirteen" />
+
+
+  <!-- FaceUnlock -->
+  <project path="external/faceunlock" name="external_faceunlock" remote="pe-gitlab-self-hosted" />
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pe" />
+
+</manifest>
