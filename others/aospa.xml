@@ -2,10 +2,6 @@
 <manifest>
 
  <!-- AOSPA -->
-  <remote  name="aospa"
-           fetch="https://github.com/AOSPA"
-           revision="topaz"/>
-
   <remote  name="aospa-blobs"
            fetch="https://github.com/ThankYouMario"
            revision="topaz" />
@@ -13,12 +9,6 @@
   <remote  name="aospa-gitlab"
            fetch="https://gitlab.com/ThankYouMario"
            revision="topaz" />
-
-  <!-- Prebuilts (AOSPA) -->
-  <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" remote="aospa" />
-
-  <!-- Tools (AOSPA) -->
-  <project path="tools/extract-utils" name="android_tools_extract-utils" remote="aospa" />
 
   <!-- Vendor (AOSPA) -->
   <project path="vendor/google/gms" name="android_vendor_google_gms" remote="aospa-gitlab" />

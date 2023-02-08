@@ -28,6 +28,7 @@
   <include name="lighthouse.xml"/>
   <include name="others/aospa.xml"/>
   <include name="others/pe.xml"/>
+  <include name="others/lineage.xml"/>
   <include name="obsolete.xml"/>
 
 </manifest>
