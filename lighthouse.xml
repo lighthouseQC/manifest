@@ -58,6 +58,7 @@
   <!-- hardware -->
   <project path="hardware/interfaces" name="hardware_interfaces" remote="lighthouse" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="lighthouse" />
+  <project path="hardware/st/nfc" name="hardware_st_nfc" remote="lighthouse" />
 
   <!-- manifest -->
   <project path="manifest" name="manifest" remote="lighthouse" />
